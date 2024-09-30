@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/layouts"
+        android:layout_marginBottom="32dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@id/bnFrameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bnFrameLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/frame_layout"
+        app:layout_constraintBottom_toTopOf="@id/bnLinearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tLabel" />
+
+    <Button
+        android:id="@+id/bnLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/linear_layout"
+        app:layout_constraintBottom_toTopOf="@id/bnGridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bnFrameLayout" />
+
+    <Button
+        android:id="@+id/bnGridLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/grid_layout"
+        app:layout_constraintBottom_toTopOf="@id/bnRelativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bnLinearLayout" />
+
+    <Button
+        android:id="@+id/bnRelativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/relative_layout"
+        app:layout_constraintTop_toBottomOf="@id/bnGridLayout"
+        app:layout_constraintBottom_toTopOf="@id/bnConstraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bnConstraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/constraint_layout"
+        app:layout_constraintTop_toBottomOf="@id/bnRelativeLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

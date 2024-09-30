@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ButtonActivity">
+
+    <Button
+        android:id="@+id/supabutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I'm a button" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/supabuttonMaterial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I'm a material button"  />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/ic_add"
+        app:iconPadding="8dp"
+        app:iconTint="#ff0000"
+        android:text="I'm a button with an icon" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/customButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_bg"
+        android:ellipsize="end"
+        android:padding="16dp"
+        android:text="@string/hello"
+        android:textColor="@color/default_text_color"
+        android:textSize="@dimen/default_text_size"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/iconMaterialButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:iconPadding="0dp"
+        android:padding="0dp"
+        app:icon="@drawable/ic_add"
+        app:iconGravity="textStart"
+        android:contentDescription="iconMaterialButton"
+        app:iconTint="#ff0000"
+        android:text=""/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/supabuttonMaterialOutline"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I'm a material button"  />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/supabuttonAppCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="I'm a app compat button" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/supabuttonAppCompatIcon"
+        android:layout_width="wrap_content"
+        android:drawableStart="@drawable/ic_add"
+        android:drawablePadding="4dp"
+        android:drawableTint="#ff0000"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="I'm a app compat button" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/supabuttonAppCompatStyled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:padding="8dp"
+        android:text="I'm a app compat button" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="A tiny Android icon"
+        android:src="@drawable/ic_add"
+        android:padding="16dp"
+        app:tint="#ff0000" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/outline"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:contentDescription=""
+        android:text="I'm a button" />
+
+</LinearLayout>

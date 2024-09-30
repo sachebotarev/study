@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Layout</string>
+    <string name="frame_layout">Frame Layout</string>
+    <string name="linear_layout">Linear Layout</string>
+    <string name="grid_layout">Grid Layout</string>
+    <string name="relative_layout">Relative Layout</string>
+    <string name="constraint_layout">Constraint Layout</string>
+    <string name="layouts">Layouts</string>
+    <string name="left_top">left|top</string>
+    <string name="center">center</string>
+    <string name="right_bottom">right|bottom</string>
+</resources>
